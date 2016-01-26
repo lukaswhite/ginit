@@ -1,0 +1,25 @@
+{
+  "name": "ginit",
+  "version": "1.0.0",
+  "description": "\"git init\" on steroids",
+  "main": "index.js",
+  "keywords": [
+    "Git",
+    "CLI"
+  ],
+  "author": "Lukas White <hello@lukaswhite.com>",
+  "license": "ISC",
+  "dependencies": {    
+    "chalk": "^1.1.1",
+    "clear": "0.0.1",
+    "clui": "^0.3.1",
+    "figlet": "^1.1.1",
+    "github": "^0.2.4",
+    "inquirer": "^0.11.0",
+    "lodash": "^3.10.1",    
+    "preferences": "^0.2.1",
+    "request": "^2.65.0",
+    "simple-git": "^1.11.0",
+    "touch": "^1.0.0"
+  }
+}
