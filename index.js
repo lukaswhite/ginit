@@ -42,7 +42,7 @@ function getGithubCredentials(callback) {
         if (value.length) {
           return true;
         } else {
-          return 'Please enter your username or e-mail address';
+          return 'Please enter your username or e-mail address.';
         }
       }
     },
@@ -54,7 +54,7 @@ function getGithubCredentials(callback) {
         if (value.length) {
           return true;
         } else {
-          return 'Please enter your password';
+          return 'Please enter your password.';
         }
       }
     }
@@ -115,7 +115,7 @@ function createRepo(callback) {
         if (value.length) {
           return true;
         } else {
-          return 'Please enter a name for the repository';
+          return 'Please enter a name for the repository.';
         }
       }
     },
@@ -228,7 +228,7 @@ githubAuth(function(err, authed) {
     }
   }
   if (authed) {
-    console.log(chalk.green('Sucessfully authenticated!'));
+    console.log(chalk.green('Successfully authenticated!'));
     createRepo(function(err, url){
       if (err) {
         console.log('An error has occured');
