@@ -15,7 +15,8 @@ Article URL: https://www.sitepoint.com/javascript-command-line-interface-cli-nod
 
 1. Clone repo
 2. Run `npm install`
-3. run `ginit <repo-name> <longer repo description>`
+3. Install the module globally with `npm install -g`
+4. Run `ginit <repo-name> <longer repo description>`
 
 ## License
 
