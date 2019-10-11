@@ -1,9 +1,9 @@
 # Build a JavaScript Command Line Interface (CLI) with Node.js
 
-Node is a great choice for building command line tools. 
+Node is a great choice for building command line tools.
 In this tutorial, Lukas White shows you how to build a Node CLI which interacts with the GitHub API.
 
-Article URL: https://www.sitepoint.com/javascript-command-line-interface-cli-node-js
+Article URL: https://www.sitepoint.com/javascript-command-line-interface-cli-node-js/
 
 ## Requirements
 
@@ -22,7 +22,7 @@ Article URL: https://www.sitepoint.com/javascript-command-line-interface-cli-nod
 
 The MIT License (MIT)
 
-Copyright (c) 2016 SitePoint
+Copyright (c) 2019 SitePoint
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
