@@ -29,10 +29,8 @@ const getGithubToken = async () => {
   }
 
   // No token found, use credentials to access GitHub account
-  await github.setGithubCredentials();
+  token = await github.getPersonalAccesToken();
 
-  // register new token
-  token = await github.registerNewToken();
   return token;
 };
 
@@ -50,6 +48,7 @@ const run = async () => {
 
     // Set up local repository and push to remote
     await repo.setupRepo(url);
+
     console.log(chalk.green('All done!'));
   } catch(err) {
       if (err) {
@@ -58,10 +57,10 @@ const run = async () => {
             console.log(chalk.red('Couldn\'t log you in. Please provide correct credentials/token.'));
             break;
           case 422:
-            console.log(chalk.red('There already exists a remote repository with the same name'));
+            console.log(chalk.red('There is already a remote repository or token with the same name'));
             break;
           default:
-            console.log(err);
+            console.log(chalk.red(err));
         }
       }
   }
