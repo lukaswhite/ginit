@@ -1,25 +1,32 @@
 {
   "name": "ginit",
   "version": "1.0.0",
-  "description": "\"git init\" on steroids",
+  "description": "'git init' on steroids",
   "main": "index.js",
+  "bin": {
+    "ginit": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [
     "Git",
     "CLI"
   ],
-  "author": "Lukas White <hello@lukaswhite.com>",
+  "author": "James Hibbard",
   "license": "ISC",
-  "dependencies": {    
-    "chalk": "^1.1.1",
-    "clear": "0.0.1",
-    "clui": "^0.3.1",
-    "figlet": "^1.1.1",
-    "github": "^0.2.4",
-    "inquirer": "^0.11.0",
-    "lodash": "^3.10.1",    
-    "preferences": "^0.2.1",
-    "request": "^2.65.0",
-    "simple-git": "^1.11.0",
-    "touch": "^1.0.0"
+  "dependencies": {
+    "@octokit/auth-basic": "^1.3.0",
+    "@octokit/rest": "^16.36.0",
+    "chalk": "^3.0.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^5.0.0",
+    "figlet": "^1.2.4",
+    "inquirer": "^7.0.3",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.0",
+    "simple-git": "^1.129.0",
+    "touch": "^3.1.0"
   }
 }
